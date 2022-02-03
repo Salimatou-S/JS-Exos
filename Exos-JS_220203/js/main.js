@@ -2,9 +2,11 @@
 Ecrire une fonction javascript qui retourne toutes les lettres d'une chaîne de caractères dans l'ordre alphabétique
 Exemple : développeur => deeloppruvé */
 
-let str = prompt("rentrez votre mot")
-function ordreAlphabetic(str){
-  let x = str.split("");
-  return(x.sort().join(""));
+
+function ordreAlphabetic(){
+  mot = prompt("rentrez votre mot")
+  mot1 = mot.split("").sort().join("");
+  alert(mot1);
 };
-document.write(ordreAlphabetic(str));
+ordreAlphabetic();
+
